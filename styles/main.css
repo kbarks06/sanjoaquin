@@ -11,7 +11,7 @@ html{
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
-    width: 900px;
+    width: 100%;
     margin:  0 auto;
     border: 3px solid #931420;
 }
@@ -111,7 +111,7 @@ main h3{
 main ul{
     padding: 0 0 .25em 1.25em;
 }
-main il{
+main li{
     padding-bottom: .35em;
 }
 a:hover, a:focus{
@@ -125,3 +125,53 @@ footer p{
     color: white;
     padding: 1em 0;
 }
+
+#mobilemenu { 
+    display: none; }  
+
+@media only screen and (max-width: 900px){
+    body{
+        box-shadow: none;
+        font-size: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main aside{
+        width: 95%;
+    }
+
+    main section{
+        width: 95%;
+    }
+    #mobilemenu { 
+        display: block; 
+    }
+
+    #nav_menu { 
+        display: none; 
+    }
+    .slicknav_menu{
+        background-color: maroon;
+    }
+
+    header h2{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 479px){
+    header{
+        font-size: 85%;
+    }
+    p{
+        font-size: 85%;
+    }
+}
+    
